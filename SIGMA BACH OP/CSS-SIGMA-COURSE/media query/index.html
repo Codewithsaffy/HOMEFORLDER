@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(51, 5, 5);
+        }
+        @media only screen and (max-width:344px) {
+            body{
+                background-color: rgb(61, 9, 16);
+                
+            }
+            .boxes{
+                flex-direction: column;
+            }
+           
+            .box1, .box2, .box3, .box4, .box5, .box6{
+                height: 100px;
+                margin: 0;
+                padding: 0;
+                width: 230px;
+                border: 3px solid rgb(243, 238, 238);
+            }
+        }
+    /* @media screen and (orientation: lanscape) {
+    } */
+        .boxes{
+            display: flex;
+        }
+        .box6{
+            height: 169px;
+            width: 231px;
+            border: 2px solid black;
+        }
+        .box2{
+            height: 169px;
+            width: 231px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+    </div>
+</body>
+</html>
+                                            <!-- GIT HUB WALA -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS media query</title>
+    <style>
+        body {
+            background-color: red;
+        }
+
+        @media screen and (orientation: portrait) { /* agar width height se ziada ho to landscape kehte hai*/
+            body{
+                border: 2px solid purple;               /* agar height width se ziada ho to potrait kehte hai*/
+            }
+        }
+
+        @media only screen and (max-width: 455px){
+            body{
+
+                background-color: blue;
+            }
+
+            .boxes{
+                flex-direction: column;
+            }
+        }
+
+        /* @media not|only mediatype and (expressions) {
+            CSS-Code;
+        } */
+
+        .boxes{
+            display: flex;
+        }
+
+        .box{
+            width: 344px;
+            height: 344px;
+            background-color: steelblue;
+            padding: 3px;
+            margin: 3px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        Hey I am a red body guy!
+    </div>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html> -->

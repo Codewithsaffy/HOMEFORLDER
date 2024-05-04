@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector</title>
+    <style>
+        .box:first-child{
+            background-color: rgb(255, 255, 255);
+        }
+        /* .box::first-letter{
+            color: brown;
+        }
+        .boxes::first-line{
+            color: brown;
+        } */
+        [data-color="primary"]{
+            margin-top:34px ;
+        }
+        .boxes *{
+            border: 2px solid black;
+        }
+       .box:nth-child(odd){
+        color: rgb(235, 243, 250);
+       }
+       .box:nth-last-child(1){
+        color: rgb(14, 77, 133);
+       }
+       .boxes::before{
+        content: "what is you name";
+       }
+       .boxes::after{
+        content:"you are good";
+       }
+       ::selection{
+        color: brown;
+        background-color: black;
+       }
+    </style>
+</head>
+<body>
+    <div  class="boxes">
+        <div data-color="primary" class="box">I am a boy</div>
+        <div class="box">You are a good</div>
+        <div class="box">i am a hood</div>
+    </div>
+</body>
+</html>

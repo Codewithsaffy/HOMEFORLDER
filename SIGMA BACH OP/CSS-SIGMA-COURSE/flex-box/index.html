@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+             * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 70vh;
+            /* width: 100vw; */
+            border: 3px solid navy;
+            display: flex; /* display ko flex banane k lie*/
+        
+            
+        }
+
+        .item {
+flex-grow: 1;
+height: 64px;
+width: 64px;
+border: 2px solid black;
+background-color: blue;
+}
+.order-1{
+    order: 2; /*kisi bhi item ka oeder change kerna */
+}
+.order-2{
+    order: 7;
+}
+.order-3{
+            flex-grow: 2;
+            align-self: flex-end;
+            /* flex-shrink: 2; */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item order-1 ">1</div>
+            <div class="item order-2 ">2</div>
+            <div class="item order-3 ">3</div>
+            <div class="item order-4 ">4</div>
+            <div class="item order-5 ">5</div>
+            <div class="item order-6 ">7</div>
+            <div class="item order-7 ">8</div>
+        </div>
+    </main>
+</body>
+</html>
+
+
+<!-- /*<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 70vh;
+            /* width: 100vw; */
+            border: 3px solid navy;
+            display: flex; /* display ko flex banane k lie*/
+            gap: 12px; /*container k under k items k dermian main gap dena */
+            flex-wrap: wrap;/*ager boxes over flow ho raha hoto us ko dusre line per lana */
+            justify-content: center;
+            align-items: center;
+            align-content: center; /* align-content jub istamal hota hai jub container me do line se ziada ho un dono k
+            dermian gap ko khatum kerne k lie*/
+        }
+
+        .item {
+            height: 34px;
+            width: 34px;
+            border: 2px solid black;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="item "></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item "></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item "></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item "></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item "></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+
+
+        </div>
+    </main>
+</body>
+
+</html> -->

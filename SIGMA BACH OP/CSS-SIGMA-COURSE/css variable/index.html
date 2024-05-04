@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable</title>
+    <style>
+        :root{
+            --color:red;/* kahin per bhi is ko is var ko is tamal ker sakte hain*/
+            --dsfpad:133px;
+            --seccolor:rgb(97, 97, 211);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            /* background-color: blue; */
+            background: var(--color);
+        }
+        .nav ul{
+            display: flex;
+        }
+        ul li{
+            /* padding: 36px; */
+            padding: var(--dsfpad);
+        list-style: none;
+        border: 2px solid var(--seccolor);
+        }
+        .container{
+            background-color: #a82828;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>Contact Us</li>
+            <li>About</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus beatae quod blanditiis iusto! Magni, voluptas dolore necessitatibus, dicta nobis natus obcaecati explicabo impedit sequi odio inventore velit iste hic nesciunt Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim adipisci doloremque perferendis vitae deserunt veritatis eligendi, repudiandae, in recusandae, necessitatibus commodi placeat architecto excepturi impedit ratione. Iure sint error ipsum.
+    </div>
+</body>
+</html>

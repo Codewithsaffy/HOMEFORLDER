@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add event listner</title>
+    <style>
+        .container{
+        padding: 34px;
+        background-color: aqua;
+        }
+        .child{
+            padding: 34px;
+        background-color: rgb(20, 37, 37);
+        }
+        .bach{
+            padding: 34px;
+        background-color: rgb(252, 2, 2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="child">
+            <div class="bach">
+                I am boy
+            </div>
+        </div>
+    </div>
+<script>
+    document.querySelector('.container').addEventListener("click",(e)=>{
+        e.stopPropagation()
+        alert("contianer was clicked")
+    })
+    document.querySelector('.child').addEventListener("click",(e)=>{
+        e.stopPropagation()
+        alert("child was clicked")
+    })
+    document.querySelector('.bach').addEventListener("click",(e)=>{
+        e.stopPropagation()
+        alert("bach was clicked")
+    })
+    const fun = ()=>{
+    let rc = Math.floor(Math.random()*120)
+    let gc = Math.floor(Math.random()*120)
+    let bc = Math.floor(Math.random()*120)
+    let op = 0.90;
+    return `rgb(${rc}, ${gc}, ${bc})`;
+}
+let a  = setInterval(()=>{
+    document.querySelector('.container').style.background = fun();
+},1000 )
+</script>
+</body>
+
+</html>

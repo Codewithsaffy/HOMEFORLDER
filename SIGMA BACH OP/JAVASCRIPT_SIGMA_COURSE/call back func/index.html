@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise ke practice</title>
+</head>
+
+<body>
+    <script>
+
+        let prom1 = new Promise((resolve, reject) => {
+            let random = Math.random();
+            if (random >= 0.5) {
+                reject('1st prom reject')
+                console.log('reject 1st promise')
+            }
+            else {
+                resolve('1st prom resolve')
+                console.log('resolve 1st promise')
+            }
+        })
+        let prom2 = new Promise((resolve, reject) => {
+            let random = Math.random();
+            if (random >= 0.5) {
+                reject('2nd prom reject')
+                console.log('reject 2nd promise')
+            }
+            else {
+                resolve('2nd prom resolve')
+                console.log('resolve 2nd promise')
+            }
+        })
+        let p = Promise.all([prom1,prom2])
+        p.then((a)=>{
+            console.log(a)
+        })
+        // .catch((err)=>{
+        //     console.log(err)
+        // })
+        // .then((a) => {
+        //     console.log(a)
+        // }).catch((e)=>{
+        //     console.log(e)
+        // })
+    </script>
+</body>
+
+</html>

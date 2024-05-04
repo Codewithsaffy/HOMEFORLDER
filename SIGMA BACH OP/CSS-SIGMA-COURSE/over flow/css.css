@@ -1,0 +1,10 @@
+.box{
+height: 23vh;
+width: 23vw;
+border: 2px solid black;
+text-overflow: ellipsis;
+/* overflow: scroll; */
+white-space: nowrap;
+overflow: scroll auto;
+/* text-overflow: clip; */
+}

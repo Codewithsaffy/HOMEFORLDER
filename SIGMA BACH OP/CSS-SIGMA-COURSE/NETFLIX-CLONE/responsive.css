@@ -1,0 +1,43 @@
+/* to make responsive tabnine ai please help me  */
+@media screen and (max-width:1300px){
+ 
+    .main{
+        height: 80vh;
+    }
+    .main .box{
+        height: 80vh;
+    }
+    html{
+        font-size: 8px;
+    }
+    .first{
+        flex-wrap: wrap;
+        text-align: center;
+        width: 100vw;
+        height: 70vh;
+    }
+    .secimage img {
+        width: 350px;
+        position: relative;
+        z-index: 10;
+      }
+      .secimage video {
+        position: absolute;
+        top: 46px;
+        width: 300px;
+        left: 45px;
+      }
+      .first > div :first-child {
+        font-size: 4.5rem;
+        font-weight: 900;
+      }
+      .first > div :nth-child(2) {
+        font-size: 2.2rem;
+      }
+      .footer {
+        grid-template-columns: 1fr 1fr ;
+      }
+      .down-started .down-button{
+flex-direction: column;
+}
+}
